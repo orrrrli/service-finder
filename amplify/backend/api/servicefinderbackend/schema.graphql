@@ -1,0 +1,29 @@
+type Proveedor @model {
+  id: ID!
+  nombre: String!
+  servicios: [Servicio] @hasMany
+  clientes: [Cliente] @hasMany
+}
+
+type Servicio @model {
+  id: ID!
+  nombre: String!
+  descripcion: String!
+  proveedor: Proveedor @belongsTo
+  clientes: [ClienteServicios] @hasMany
+}
+
+type Cliente @model {
+  id: ID!
+  nombre: String!
+  email: String!
+  proveedor: Proveedor @belongsTo
+  servicios: [ClienteServicios] @hasMany
+}
+
+# Relación de muchos a muchos entre Cliente y Servicio
+type ClienteServicios @model {
+  id: ID!
+  cliente: Cliente @belongsTo
+  servicio: Servicio @belongsTo
+}

@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-servicefinderbackend-dev-4a383-authRole",
+      "UnauthRoleArn": "arn:aws:iam::851725625879:role/amplify-servicefinderbackend-dev-4a383-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::851725625879:role/amplify-servicefinderbackend-dev-4a383-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-servicefinderbackend-dev-4a383-deployment",
+      "UnauthRoleName": "amplify-servicefinderbackend-dev-4a383-unauthRole",
+      "StackName": "amplify-servicefinderbackend-dev-4a383",
+      "StackId": "arn:aws:cloudformation:us-west-1:851725625879:stack/amplify-servicefinderbackend-dev-4a383/dfc624c0-821a-11ef-bb6f-060fd33b6023",
+      "AmplifyAppId": "d1hoqcs0my0wni"
+    }
+  },
+  "backend": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-servicefinderbackend-backend-96e15-authRole",
+      "UnauthRoleArn": "arn:aws:iam::851725625879:role/amplify-servicefinderbackend-backend-96e15-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::851725625879:role/amplify-servicefinderbackend-backend-96e15-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-servicefinderbackend-backend-96e15-deployment",
+      "UnauthRoleName": "amplify-servicefinderbackend-backend-96e15-unauthRole",
+      "StackName": "amplify-servicefinderbackend-backend-96e15",
+      "StackId": "arn:aws:cloudformation:us-west-1:851725625879:stack/amplify-servicefinderbackend-backend-96e15/9f0ab1d0-821f-11ef-8cbc-02528cb401e5",
+      "AmplifyAppId": "d37bfdjzq7vvft"
+    },
+    "categories": {
+      "api": {
+        "servicefinderbackend": {}
+      }
+    }
+  }
+}
