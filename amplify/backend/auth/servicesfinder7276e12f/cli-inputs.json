@@ -1,8 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "resourceNameTruncated": "servic0e44342d",
-    "userPoolName": "servicesfinder0e44342d_userpool_0e44342d",
+    "identityPoolName": "servicesfinder7276e12f_identitypool_7276e12f",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "servic7276e12f",
+    "userPoolName": "servicesfinder7276e12f_userpool_7276e12f",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -24,7 +26,7 @@
       "family_name",
       "given_name",
       "phone_number",
-      "website"
+      "profile"
     ],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
@@ -35,44 +37,19 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "servic0e44342d_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "servic7276e12f_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "0e44342d",
-    "resourceName": "servicesfinder0e44342d0e44342d",
-    "authSelections": "userPoolOnly",
-    "useDefault": "manual",
+    "sharedId": "7276e12f",
+    "resourceName": "servicesfinder7276e12f",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "default",
     "usernameAttributes": [
       "email"
     ],
-    "userPoolGroups": true,
-    "adminQueries": false,
     "triggers": {},
-    "hostedUI": false,
-    "userPoolGroupList": [
-      "Clientes",
-      "Proveedores"
-    ],
+    "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "useEnabledMfas": true,
-    "authRoleArn": {
-      "Fn::GetAtt": [
-        "AuthRole",
-        "Arn"
-      ]
-    },
-    "unauthRoleArn": {
-      "Fn::GetAtt": [
-        "UnauthRole",
-        "Arn"
-      ]
-    },
-    "breakCircularDependency": true,
-    "dependsOn": [],
-    "authProviders": [],
-    "parentStack": {
-      "Ref": "AWS::StackId"
-    },
-    "permissions": []
+    "useEnabledMfas": true
   }
 }

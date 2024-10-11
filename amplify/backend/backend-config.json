@@ -1,6 +1,6 @@
 {
   "auth": {
-    "servicesfinder0e44342d0e44342d": {
+    "servicesfinder7276e12f": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -19,7 +19,7 @@
           "FAMILY_NAME",
           "GIVEN_NAME",
           "PHONE_NUMBER",
-          "WEBSITE"
+          "PROFILE"
         ],
         "socialProviders": [],
         "usernameAttributes": [
@@ -31,21 +31,39 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
-    },
-    "userPoolGroups": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "UserPoolId",
-            "AppClientIDWeb",
-            "AppClientID"
-          ],
-          "category": "auth",
-          "resourceName": "servicesfinder0e44342d0e44342d"
-        }
-      ],
+    }
+  },
+  "function": {
+    "servicesfinder0e44342d0e44342dPostConfirmation": {
+      "build": true,
       "providerPlugin": "awscloudformation",
-      "service": "Cognito-UserPool-Groups"
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_servicesfinder0e44342d0e44342dPostConfirmation_GROUP": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "servicesfinder0e44342d0e44342dPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_servicesfinder0e44342d0e44342dPostConfirmation_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "servicesfinder0e44342d0e44342dPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_servicesfinder0e44342d0e44342dPostConfirmation_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "servicesfinder0e44342d0e44342dPostConfirmation"
+        }
+      ]
     }
   }
 }

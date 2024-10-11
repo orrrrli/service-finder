@@ -9,12 +9,19 @@
       "UnauthRoleName": "amplify-servicesfinder-dev-59d12-unauthRole",
       "StackName": "amplify-servicesfinder-dev-59d12",
       "StackId": "arn:aws:cloudformation:us-west-1:851725625879:stack/amplify-servicesfinder-dev-59d12/02160bc0-8799-11ef-ae26-069503ce9d73",
-      "AmplifyAppId": "d2x4pdehscj4r2"
+      "AmplifyAppId": "d2x4pdehscj4r2",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-servicesfinder-dev-59d12-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
+      "function": {
+        "servicesfinder0e44342d0e44342dPostConfirmation": {
+          "GROUP": "",
+          "deploymentBucketName": "amplify-servicesfinder-dev-59d12-deployment",
+          "s3Key": "amplify-builds/servicesfinder0e44342d0e44342dPostConfirmation-4779744731727979676e-build.zip"
+        }
+      },
       "auth": {
-        "servicesfinder0e44342d0e44342d": {},
-        "userPoolGroups": {}
+        "servicesfinder7276e12f": {}
       }
     }
   }

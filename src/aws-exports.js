@@ -3,9 +3,10 @@
 
 const awsmobile = {
     "aws_project_region": "us-west-1",
+    "aws_cognito_identity_pool_id": "us-west-1:28e29a12-57e7-4e42-9b0b-7113396232e6",
     "aws_cognito_region": "us-west-1",
-    "aws_user_pools_id": "us-west-1_M0GS8M2Rd",
-    "aws_user_pools_web_client_id": "hpve7f8rai29gfvh59cpn987",
+    "aws_user_pools_id": "us-west-1_X9KitIUcW",
+    "aws_user_pools_web_client_id": "1a82kks8imescrr9ujejsr0o86",
     "oauth": {},
     "aws_cognito_username_attributes": [
         "EMAIL"
@@ -18,7 +19,7 @@ const awsmobile = {
         "FAMILY_NAME",
         "GIVEN_NAME",
         "PHONE_NUMBER",
-        "WEBSITE"
+        "PROFILE"
     ],
     "aws_cognito_mfa_configuration": "OFF",
     "aws_cognito_mfa_types": [
