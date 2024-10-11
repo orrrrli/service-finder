@@ -19,7 +19,7 @@ export default function App() {
   // Renderizar el componente de autenticación
   return (
     <Authenticator
-  formFields={{
+    formFields={{
     signUp: {
       address: {
         label: 'Address',
