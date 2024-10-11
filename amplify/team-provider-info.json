@@ -13,7 +13,8 @@
     },
     "categories": {
       "auth": {
-        "servicesfinder0e44342d0e44342d": {}
+        "servicesfinder0e44342d0e44342d": {},
+        "userPoolGroups": {}
       }
     }
   }
